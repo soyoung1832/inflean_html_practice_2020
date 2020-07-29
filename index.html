@@ -18,9 +18,25 @@
 	<p>서울에 사는 개발자 김소영입니다.</p>
 	<p>pyton을 이용한 웹개발 공부를 하고있습니다.</p>
 
+	<h3 id="hello_to_somebody"></h3>
+
+	<input type="text" name="name" id="user_name" onkeyup="dosomething()">
+	<button type="button" onclick="alert('안녕하세요')">say Hello</button>
+
+	<a href="about_me.html">About Me</a>
+
 	<hr/>
 
-	<img width="500px" src=https://images.pexels.com/photos/2682877/pexels-photo-2682877.jpeg?auto=compress&cs=tinysrgb&h=650&w=940>
+	<img src=https://images.pexels.com/photos/2682877/pexels-photo-2682877.jpeg?auto=compress&cs=tinysrgb&h=650&w=940>
+
+	<script>
+		function dosomething(){
+			var name = document.getElementById("user_name").value;
+
+			document.getElementById("hello_to_somebody").innerHTML=" 안녕하세요."+ name +"님!"
+
+		}
+	</script>
 
 </body>
 </html>
